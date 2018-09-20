@@ -151,12 +151,13 @@ public class AuctionServer
 		/**
 		 * Try catch or just if else for the exception?
 		 * */
-
 		if (sellerName == null || itemName == null
 				|| lowestBiddingPrice < 0 || itemsPerSeller == null
 				|| itemsPerSeller.size() == 0){
 			return  -1;
 		}
+
+		/**set different biddingDurationMs to make some sellers have a longer time to sell their items.*/
 //		if (reach server capacity) return -1;
 		if (itemsPerSeller.get(sellerName) > maxSellerItems){
 			return -1;
