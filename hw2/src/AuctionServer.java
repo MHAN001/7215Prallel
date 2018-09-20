@@ -199,6 +199,7 @@ public class AuctionServer
 		 * pre-condition: bidderName and listingID not null, listingID in list items. check status of item which should be available for bidding. legal biddingAmount.
 		 * Invariant: bidding amount less than 10.
 		 * post-condition: return true if submit successfully or false if not.
+		 * Exception: bidderName null or biddingAmount less than 0
 		 */
 		// TODO: IMPLEMENT CODE HERE
 		// Some reminders:
