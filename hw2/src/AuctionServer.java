@@ -134,7 +134,10 @@ public class AuctionServer
 	public int submitItem(String sellerName, String itemName, int lowestBiddingPrice, int biddingDurationMs)
 	{
 		/**
-		 * pre-condition:seller Name and itemName not null or "", lowestBiddingPrice cannot less than 0 or more than 10, biddingDurationMs cannot more than 1000
+		 * pre-condition:seller Name and itemName not null or "",
+		 * 				lowestBiddingPrice cannot less than 0 or more than 10,
+		 * 				biddingDurationMs cannot more than 1000,
+		 * 			    itemsList did not reach serverCapacity
 		 * Invariant: Number of items related to a person cannot more than maxSellerItems.
 		 * post-condition:return -1 if submit item fail or return list id if submit successfully.
 		 * Exception: null pointer and ArithmeticException when sellerName, itemName null or lowestBiddingPrice under 0
@@ -148,11 +151,13 @@ public class AuctionServer
 		/**
 		 * Try catch or just if else for the exception?
 		 * */
+
 		if (sellerName == null || itemName == null
 				|| lowestBiddingPrice < 0 || itemsPerSeller == null
 				|| itemsPerSeller.size() == 0){
 			return  -1;
 		}
+//		if (reach server capacity) return -1;
 		if (itemsPerSeller.get(sellerName) > maxSellerItems){
 			return -1;
 		}
@@ -175,9 +180,10 @@ public class AuctionServer
 	{
 		/**
 		 * TODO Q: Deep copy override clone in Item?
-		 * pre-condition:
-		 * Invariant:
+		 * pre-condition: List not null;
+		 * Invariant:size list of active items cannot more than server capacity
 		 * post-condition:return the copy of items in the list.
+		 * Exception: list size more than server capacity.
 		 */
 		// TODO: IMPLEMENT CODE HERE
 		// Some reminders:
