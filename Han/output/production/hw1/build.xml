@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+    <project name="hw1" basedir="." default="build">
+        <property name="build.dir" value="./output/production/hw1"></property>
+        <path id="master-classpath">
+            <fileset dir=".idea/lib">
+                <include name="*.jar" />
+            </fileset>
+            <pathelement path="${build.dir}" />
+        </path>
+        <target name="build" description="Compile source java files">
+            <mkdir dir="build.dir" />
+                    <javac destdir="${build.dir}" source="1.8" target="1.8">
+                        <src path="./" />
+                        <classpath refid="master-classpath" />
+                    </javac>
+        </target>
+        <target name="clean" description="Clean output directories">
+            <delete>
+                <fileset dir="${build.dir}">
+                    <include name="**/*.class"/>
+                </fileset>
+            </delete>
+        </target>
+        <target name="test">
+            <junit printsummary="on" showoutput="on">
+                <classpath refid="master-classpath">
+                </classpath>
+                <test name="PublicTest" />
+            </junit>
+        </target>
+        <target name = "run">
+            <antcall target="clean"></antcall>
+            <antcall target="build"></antcall>
+            <antcall target="test"></antcall>
+        </target>
+    </project>
