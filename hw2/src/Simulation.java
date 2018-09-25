@@ -24,18 +24,20 @@ public class Simulation
             );
             sellerThreads[i] = new Thread(sellers[i]);
             sellerThreads[i].start();
+            System.out.println("seller"+"["+i+"]"+"started");
         }
         
         // Start the buyers
         for (int i=0; i<nrBidders; ++i)
         {
             bidders[i] = new Bidder(
-            		AuctionServer.getInstance(), 
-            		"Buyer"+i, 
+            		AuctionServer.getInstance(),
+            		"Buyer"+i,
             		1000, 20, 150, i
             );
             bidderThreads[i] = new Thread(bidders[i]);
             bidderThreads[i].start();
+            System.out.println("bidder"+"["+i+"]"+"started");
         }
         
         // Join on the sellers
@@ -56,7 +58,7 @@ public class Simulation
         {
             try
             {
-                sellerThreads[i].join();
+                bidderThreads[i].join();
             }
             catch (InterruptedException e)
             {
@@ -65,6 +67,8 @@ public class Simulation
         }
         
         // TODO: Add code as needed to debug
-        
+        //TODO: Top sellers
+        System.out.println(AuctionServer.getInstance().soldItemsCount());
+        System.out.println(AuctionServer.getInstance().revenue());
     }
 }

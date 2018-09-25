@@ -47,6 +47,9 @@ public class AuctionServer
 
 	public int soldItemsCount()
 	{
+		for(Map.Entry i : highestBids.entrySet()){
+			soldItemsCount += (int)i.getValue();
+		}
 		return this.soldItemsCount;
 	}
 
@@ -152,21 +155,35 @@ public class AuctionServer
 		 * Try catch or just if else for the exception?
 		 * */
 		if (sellerName == null || itemName == null
-				|| lowestBiddingPrice < 0 || itemsPerSeller == null
-				|| itemsPerSeller.size() == 0){
+				|| lowestBiddingPrice < 0 || itemsPerSeller == null|| itemsAndIDs == null){
 			return  -1;
 		}
 
 		/**set different biddingDurationMs to make some sellers have a longer time to sell their items.*/
 //		if (reach server capacity) return -1;
-		if (itemsPerSeller.get(sellerName) > maxSellerItems){
+		if (itemsPerSeller.get(sellerName) != null && itemsPerSeller.get(sellerName) >= maxSellerItems || itemsUpForBidding.size() >= serverCapacity){
 			return -1;
 		}
-		if (itemsUpForBidding.stream().anyMatch(o -> o.name().equals(itemName) && o.seller().equals(sellerName))){
-			return -1;//TODO: submit same item?
+//		synchronized (itemsUpForBidding){
+//			if (itemsUpForBidding.stream().anyMatch(o -> o.name().equals(itemName) && o.seller().equals(sellerName))){
+//				return -1;
+//			}
+//		}
+		synchronized (itemsUpForBidding){
+			if (!itemsUpForBidding.contains(itemsAndIDs.get(lastListingID)))
+			lastListingID += 2;
 		}
-		//if(!contains seller){ new seller; new item; item hashcode; itemsPerSeller.add()}
-		//itemsPerSeller.get(sellerName)++;
+		Item item = new Item(sellerName,itemName, lastListingID, lowestBiddingPrice,biddingDurationMs);
+
+		synchronized (this.itemsPerSeller){
+			if(!itemsPerSeller.containsKey(sellerName) || this.itemsPerSeller.get(sellerName) == 0){
+				itemsPerSeller.put(sellerName, 1);
+			}else {
+				this.itemsPerSeller.replace(sellerName, this.itemsPerSeller.get(sellerName)+1);
+			}
+		}
+		itemsUpForBidding.add(item);
+		itemsAndIDs.put(lastListingID, item);
 		//
 		return -1;
 	}
@@ -219,17 +236,33 @@ public class AuctionServer
 		//   Decrement the former winning bidder's count
 		//   Put your bid in place
 
-		//if(itemsUpForBidding null ) new itemsUpForBidding
-		//if(itemsPerBuyer null) new itemsPerBuyer
-		//
-		if (!itemsUpForBidding.contains(listingID) || !itemsUpForBidding.get(listingID).biddingOpen()){
-			return  false;
+		synchronized (itemsUpForBidding){
+			if(itemsUpForBidding == null ) return false;
+			if(itemsPerBuyer == null) return false;
+			Item bidItem = itemsAndIDs.get(listingID);
+			boolean flag = false;
+			for (Item i : itemsUpForBidding){
+				if (i == null) continue;
+				if (i.name().equals(bidItem.name())){
+					flag = true;
+				}
+			}
+			if (!flag){
+				return false;
+			}
+			if (!itemsUpForBidding.get(listingID).biddingOpen()){
+				return false;
+			}
 		}
-
-		//highestBids.put(listingID, biddingAmount);
-		for (Map.Entry<String, Integer> entry: itemsPerBuyer.entrySet()){
-			if (entry.getKey().equals(bidderName)){
-				return entry.getValue() > maxBidCount ? false : true; //TODO : COMPARE CURRENT VS PREVIOUS
+		revenue += itemPrice(listingID);
+		synchronized (highestBids){
+			highestBids.put(listingID, biddingAmount);
+		}
+		synchronized (itemsPerBuyer){
+			for (Map.Entry<String, Integer> entry: itemsPerBuyer.entrySet()){
+				if (entry.getKey().equals(bidderName)){
+					return entry.getValue() > maxBidCount ? false : true; //TODO : COMPARE CURRENT VS PREVIOUS
+				}
 			}
 		}
 		return false;
@@ -257,15 +290,19 @@ public class AuctionServer
 		//     Remove item from the list of things up for bidding.
 		//     Decrease the count of items being bid on by the winning bidder if there was any...
 		//     Update the number of open bids for this seller
-		if (itemsPerBuyer.keySet().contains(bidderName)
-				&& itemsPerBuyer.get(bidderName) < maxBidCount
-				&& itemsUpForBidding.get(listingID).biddingOpen()){
-			return 2;
+		synchronized(itemsPerBuyer){
+			if (itemsPerBuyer.keySet().contains(bidderName) && itemsPerBuyer.get(bidderName) < maxBidCount){
+				return 2;
+			}
+		}
+		synchronized (itemsUpForBidding){
+			if (!itemsUpForBidding.get(listingID).biddingOpen()) {
+				return 1;
+			}else if(itemsUpForBidding.get(listingID).biddingOpen()){
+				return 2;
+			}
 		}
 
-		if (!itemsUpForBidding.get(listingID).biddingOpen()) {
-			return 1;
-		}
 		return -1;
 	}
 
@@ -284,7 +321,12 @@ public class AuctionServer
 		 * Exception: input id error
 		 */
 		// TODO: IMPLEMENT CODE HERE
-		return highestBids.get(listingID);
+		synchronized (highestBids){
+			if (highestBids == null || highestBids.size() == 0){
+				return -1;
+			}
+			return highestBids.get(listingID);
+		}
 	}
 
 	/**
@@ -292,7 +334,7 @@ public class AuctionServer
 	 * @param listingID Unique ID of the <code>Item</code>
 	 * @return True if there is no bid or the <code>Item</code> does not exist, false otherwise
 	 */
-	public Boolean itemUnbid(int listingID)
+	public synchronized Boolean itemUnbid(int listingID)
 	{
 		/**
 		 * pre-condition: item exists.

@@ -52,7 +52,7 @@ public class Bidder implements Client
     }
 
     @Override
-    public void run()
+    public synchronized void run()
     {
         List<Item> activeBids = new ArrayList<Item>();
         Hashtable<Item, Integer> activeBidPrices = new Hashtable<Item, Integer>();
