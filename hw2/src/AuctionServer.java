@@ -160,7 +160,6 @@ public class AuctionServer
 		}
 
 		/**set different biddingDurationMs to make some sellers have a longer time to sell their items.*/
-//		if (reach server capacity) return -1;
 		if (itemsPerSeller.get(sellerName) != null && itemsPerSeller.get(sellerName) >= maxSellerItems || itemsUpForBidding.size() >= serverCapacity){
 			return -1;
 		}
@@ -174,9 +173,9 @@ public class AuctionServer
 			lastListingID += 2;
 		}
 		Item item = new Item(sellerName,itemName, lastListingID, lowestBiddingPrice,biddingDurationMs);
-
+		//bias
 		synchronized (this.itemsPerSeller){
-			if(!itemsPerSeller.containsKey(sellerName) || this.itemsPerSeller.get(sellerName) == 0){
+			if(!itemsPerSeller.containsKey(sellerName) || itemsPerSeller.get(sellerName) == 0){
 				itemsPerSeller.put(sellerName, 1);
 			}else {
 				this.itemsPerSeller.replace(sellerName, this.itemsPerSeller.get(sellerName)+1);
@@ -254,7 +253,9 @@ public class AuctionServer
 				return false;
 			}
 		}
-		revenue += itemPrice(listingID);
+
+		revenue += itemPrice(listingID);//Safe?
+
 		synchronized (highestBids){
 			highestBids.put(listingID, biddingAmount);
 		}
