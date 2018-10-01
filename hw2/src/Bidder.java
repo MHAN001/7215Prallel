@@ -75,7 +75,7 @@ public class Bidder implements Client
                 if (price < this.cash - sumActiveBids)
                 {
                     // The server should ensure thread safety: if the price
-                    // has already increased, then this bid should be invalid.
+                    //i has already increased, then this bid should be invalid.
                     boolean success = server.submitBid(this.name(), item.listingID(), price + 1);
 
                     if (success)

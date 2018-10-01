@@ -70,7 +70,8 @@ public class AuctionServer
 
 	/* Statistic variables and server constants: End code you should likely leave alone. */
 
-
+	//count first 10 seller; Give them more duration time;
+	private int counter = 0;
 
 	/**
 	 * Some variables we think will be of potential use as you implement the server...
@@ -158,22 +159,20 @@ public class AuctionServer
 				|| lowestBiddingPrice < 0 || itemsPerSeller == null|| itemsAndIDs == null){
 			return  -1;
 		}
-
 		/**set different biddingDurationMs to make some sellers have a longer time to sell their items.*/
 		if (itemsPerSeller.get(sellerName) != null && itemsPerSeller.get(sellerName) >= maxSellerItems || itemsUpForBidding.size() >= serverCapacity){
 			return -1;
 		}
-//		synchronized (itemsUpForBidding){
-//			if (itemsUpForBidding.stream().anyMatch(o -> o.name().equals(itemName) && o.seller().equals(sellerName))){
-//				return -1;
-//			}
-//		}
 		synchronized (itemsUpForBidding){
-			if (!itemsUpForBidding.contains(itemsAndIDs.get(lastListingID)))
-			lastListingID += 2;
+			if (!itemsUpForBidding.contains(itemsAndIDs.get(lastListingID))){
+				lastListingID += 2;
+				counter++;
+			}
 		}
-		Item item = new Item(sellerName,itemName, lastListingID, lowestBiddingPrice,biddingDurationMs);
 		//bias
+		biddingDurationMs = counter > 10 ? biddingDurationMs : biddingDurationMs + 100;
+		Item item = new Item(sellerName,itemName, lastListingID, lowestBiddingPrice,biddingDurationMs);
+
 		synchronized (this.itemsPerSeller){
 			if(!itemsPerSeller.containsKey(sellerName) || itemsPerSeller.get(sellerName) == 0){
 				itemsPerSeller.put(sellerName, 1);
@@ -181,10 +180,10 @@ public class AuctionServer
 				this.itemsPerSeller.replace(sellerName, this.itemsPerSeller.get(sellerName)+1);
 			}
 		}
-		itemsUpForBidding.add(item);
 		itemsAndIDs.put(lastListingID, item);
+		itemsUpForBidding.add(item);
 		//
-		return -1;
+		return lastListingID;
 	}
 
 
@@ -226,47 +225,54 @@ public class AuctionServer
 		 */
 		// TODO: IMPLEMENT CODE HERE
 		// Some reminders:
-		//   See if the item exists.
-		//   See if it can be bid upon.
-		//   See if this bidder has too many items in their bidding list.
+		//   See if the item exists.check
+		//   See if it can be bid upon. check
+		//   See if this bidder has too many items in their bidding list. check
 		//   Get current bidding info.
 		//   See if they already hold the highest bid.
 		//   See if the new bid isn't better than the existing/opening bid floor.
 		//   Decrement the former winning bidder's count
 		//   Put your bid in place
-
+		Item bidItem;
+		synchronized (itemsAndIDs){
+			if (!itemsAndIDs.containsKey(listingID)){
+				return false;
+			}
+			bidItem = itemsAndIDs.get(listingID);
+		}
 		synchronized (itemsUpForBidding){
 			if(itemsUpForBidding == null ) return false;
-			if(itemsPerBuyer == null) return false;
-			Item bidItem = itemsAndIDs.get(listingID);
-			boolean flag = false;
-			for (Item i : itemsUpForBidding){
-				if (i == null) continue;
-				if (i.name().equals(bidItem.name())){
-					flag = true;
-				}
-			}
-			if (!flag){
+
+			if (!bidItem.biddingOpen() || !itemsUpForBidding.contains(bidItem)){
 				return false;
 			}
-			if (!itemsUpForBidding.get(listingID).biddingOpen()){
-				return false;
-			}
-		}
-
-		revenue += itemPrice(listingID);//Safe?
-
-		synchronized (highestBids){
-			highestBids.put(listingID, biddingAmount);
 		}
 		synchronized (itemsPerBuyer){
-			for (Map.Entry<String, Integer> entry: itemsPerBuyer.entrySet()){
-				if (entry.getKey().equals(bidderName)){
-					return entry.getValue() > maxBidCount ? false : true; //TODO : COMPARE CURRENT VS PREVIOUS
+			{
+				if (itemsPerBuyer.containsKey(bidderName) && itemsPerBuyer.get(bidderName) > maxBidCount){
+					return false;
+				}else{
+					itemsPerBuyer.put(bidderName, 1);
 				}
 			}
 		}
-		return false;
+		//update highest bidders for
+		synchronized (highestBidders){
+			if (highestBidders.containsKey(listingID) && highestBidders.get(listingID).equals(bidderName)){
+				return false;
+			}else{
+				synchronized (highestBids){
+					if (highestBids.containsKey(listingID) && highestBids.get(listingID) >= biddingAmount){
+						return false;
+					}
+					highestBids.put(listingID, biddingAmount);
+				}
+				highestBidders.put(listingID, bidderName);
+			}
+		}
+		//update highestBids for item
+
+		return true;
 	}
 
 	/**
@@ -291,13 +297,24 @@ public class AuctionServer
 		//     Remove item from the list of things up for bidding.
 		//     Decrease the count of items being bid on by the winning bidder if there was any...
 		//     Update the number of open bids for this seller
-		synchronized(itemsPerBuyer){
-			if (itemsPerBuyer.keySet().contains(bidderName) && itemsPerBuyer.get(bidderName) < maxBidCount){
-				return 2;
-			}
-		}
+		Item item = itemsAndIDs.get(listingID);
+		String seller = item.seller();
 		synchronized (itemsUpForBidding){
+			if (!itemsUpForBidding.contains(item)){
+				return 3;
+			}
 			if (!itemsUpForBidding.get(listingID).biddingOpen()) {
+				revenue += highestBids.get(listingID);
+				itemsUpForBidding.remove(item);
+				synchronized(itemsPerBuyer){
+					if (itemsPerBuyer.keySet().contains(bidderName)){
+						itemsPerBuyer.put(bidderName, itemsPerBuyer.get(bidderName)-1);
+					}
+				}
+				itemsAndIDs.notify();
+				synchronized (itemsPerSeller){
+					itemsPerSeller.put(seller, itemsPerSeller.get(seller)-1);
+				}
 				return 1;
 			}else if(itemsUpForBidding.get(listingID).biddingOpen()){
 				return 2;
@@ -326,6 +343,9 @@ public class AuctionServer
 			if (highestBids == null || highestBids.size() == 0){
 				return -1;
 			}
+			if(!highestBids.containsKey(listingID)){
+				return -1;
+			}
 			return highestBids.get(listingID);
 		}
 	}
@@ -344,10 +364,7 @@ public class AuctionServer
 		 * Exception: input id wrong or null for one of the list
 		 */
 		// TODO: IMPLEMENT CODE HERE
-		if (!itemsUpForBidding.contains(listingID) || itemsAndIDs.get(listingID).biddingOpen()){
-			return false;
-		}
-		return true;
+		return !itemsAndIDs.containsKey(listingID) || !itemsAndIDs.get(listingID).biddingOpen() ? true : false ;
 	}
 
 

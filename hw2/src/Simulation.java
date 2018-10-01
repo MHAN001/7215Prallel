@@ -70,10 +70,6 @@ public class Simulation
         //TODO: Top sellers
         System.out.println(AuctionServer.getInstance().soldItemsCount());
         System.out.println(AuctionServer.getInstance().revenue());
-        testBias(AuctionServer.getInstance());
     }
 
-    private static void testBias(AuctionServer server){
-
-    }
 }
