@@ -1,4 +1,7 @@
-import java.util.HashMap;
+import com.sun.org.apache.bcel.internal.generic.SIPUSH;
+import sun.awt.im.SimpleInputMethodWindow;
+
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -9,8 +12,7 @@ import java.util.List;
 public class Cook implements Runnable {
 	private final String name;
 //HashMap<int, List<Food>>  //priority
-	private static HashMap<Integer, List<Food>> orders;
-	private final int capacity;
+	public List<Food> foodsDone = new LinkedList<>();
 	/**
 	 * You can feel free modify this constructor.  It must
 	 * take at least the name, but may take other parameters
@@ -18,9 +20,8 @@ public class Cook implements Runnable {
 	 *
 	 * @param: the name of the cook
 	 */
-	public Cook(String name, int capacity) {
+	public Cook(String name) {
 		this.name = name;
-		this.capacity = capacity;
 	}
 
 	public String toString() {
@@ -40,12 +41,52 @@ public class Cook implements Runnable {
 	 * terminates.
 	 */
 	public void run() {
-		//TODO : receive from customer(where customer carry the order)
 		Simulation.logEvent(SimulationEvent.cookStarting(this));
 		try {
+			int i = 0;
 			while(true) {
-				wait();
-				//YOUR CODE GOES HERE...
+				synchronized (Simulation.customerOrder){
+					while (Simulation.customerOrder == null || Simulation.customerOrder.size() == 0){
+						Simulation.customerOrder.wait();
+					}
+					Simulation.customerOrder.notifyAll();
+					Customer custtmp = Simulation.customerOrder.firstKey();
+					List<Food> tmp = Simulation.customerOrder.get(custtmp);
+					for (Food f : tmp){
+						Machine m;
+						if (f.name.equals("burger")){
+							m = Simulation.Grill;
+						}else if (f.name.equals("fries")){
+							m = Simulation.Frier;
+						}else {
+							m = Simulation.Star;
+						}
+						synchronized (m.foods){
+							if (m.getMachineAvail()){
+								Simulation.logEvent(SimulationEvent.cookStarting(this));
+								m.makeFood(f,this);
+								m.foods.notifyAll();
+							}else {
+								m.foods.wait();
+							}
+						}
+					}
+					synchronized (foodsDone){
+						while (foodsDone.size() != tmp.size()){
+							foodsDone.wait();
+							foodsDone.notifyAll();
+						}
+					}
+					synchronized (Simulation.ordersCompleted){
+						Simulation.ordersCompleted.add(custtmp);
+						Simulation.customerOrder.remove(custtmp);
+						Simulation.logEvent(SimulationEvent.customerLeavingCoffeeShop(custtmp));
+						Simulation.ordersCompleted.notifyAll();
+						Simulation.customerOrder.notifyAll();
+					}
+					foodsDone = new LinkedList<>();
+				}
+				Simulation.logEvent(SimulationEvent.cookEnding(this));
 				/**
 				 * pre-condition: customers come with order. logEvent run successfully
 				 * post-condition: submit orders to machines, notify customers once order done

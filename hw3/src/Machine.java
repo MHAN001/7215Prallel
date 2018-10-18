@@ -1,3 +1,8 @@
+import com.sun.corba.se.impl.corba.CORBAObjectImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A Machine is used to make a particular Food.  Each Machine makes
  * just one kind of Food.  Each machine has a capacity: it can make
@@ -6,10 +11,11 @@
  * Each food item takes at least item.cookTimeMS milliseconds to
  * produce.
  */
-public class Machine {
+public class Machine{
 	public final String machineName;
 	public final Food machineFoodType;
-	//YOUR CODE GOES HERE...
+	public List<Food> foods;
+	private final int capacity;
 
 
 	/**
@@ -20,13 +26,16 @@ public class Machine {
 	 * must add code to make use of this field (and do whatever
 	 * initialization etc. you need).
 	 */
-	public Machine(String nameIn, Food foodIn, int capacityIn) {
+	public Machine(String nameIn, Food foodTypeIn, int capacityIn) {
+		//limit input number
 		this.machineName = nameIn;
-		this.machineFoodType = foodIn;
-		
-		//YOUR CODE GOES HERE...
-
+		this.machineFoodType = foodTypeIn;
+		this.capacity = capacityIn;
+		this.foods = new ArrayList<>(capacityIn);
+		Simulation.logEvent(SimulationEvent.machineStarting(this, foodTypeIn, capacityIn));
 	}
+
+
 	
 
 	
@@ -40,7 +49,7 @@ public class Machine {
 	 * the call can proceed.  You will need to implement some means to
 	 * notify the calling Cook when the food item is finished.
 	 */
-	public Object makeFood() throws InterruptedException {
+	public void makeFood(Food foodIn, Cook cook) throws InterruptedException {
 		//YOUR CODE GOES HERE...
 		/**
 		 * TODO: Food capacity, food done
@@ -49,20 +58,38 @@ public class Machine {
 		 * invariants: input numFoods cannot more than capacity
 		 * exceptions: InterruptedException or illegal arguments exception
 		 */
-		return null;
+		foods.add(foodIn);
+		Thread cookAnItem = new Thread(new CookAnItem(foodIn.cookTimeMS, cook));
+		cookAnItem.start();
 	}
 
 	//THIS MIGHT BE A USEFUL METHOD TO HAVE AND USE BUT IS JUST ONE IDEA
 	private class CookAnItem implements Runnable {
+		private int sleepTime;
+		private Cook cook;
+		private CookAnItem(int time, Cook cook){
+			this.sleepTime = time;
+			this.cook = cook;
+		}
 		public void run() {
 			try {
-				wait();
-				//YOUR CODE GOES HERE...
+				Thread.sleep(sleepTime);
+				synchronized (foods){
+					foods.remove(0);
+					foods.notifyAll();
+				}
+				Simulation.logEvent(SimulationEvent.machineCookingFood(Machine.this, machineFoodType));
+				synchronized (cook.foodsDone){
+					cook.foodsDone.add(machineFoodType);
+					cook.foodsDone.notifyAll();
+				}
 			} catch(InterruptedException e) { }
 		}
 	}
  
-
+	public synchronized boolean getMachineAvail(){
+		return this.foods.size() <= this.capacity;
+	}
 	public String toString() {
 		return machineName;
 	}

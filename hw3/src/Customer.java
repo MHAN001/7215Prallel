@@ -14,11 +14,9 @@ public class Customer implements Runnable {
 	private final int orderNum;    
 	
 	private static int runningCounter = 0;
-
+	private final int capacity;
 	private final int priority;
-	private final int numTables;
-	private static int avalTbls;
-	/**
+		/**
 	 * You can feel free modify this constructor.  It must take at
 	 * least the name and order but may take other parameters if you
 	 * would find adding them useful.
@@ -28,7 +26,7 @@ public class Customer implements Runnable {
 		this.order = order;
 		this.orderNum = ++runningCounter;
 		this.priority = priority;
-		this.numTables = tables;
+		this.capacity = tables;
 	}
 
 	public String toString() {
@@ -50,40 +48,42 @@ public class Customer implements Runnable {
 		 * invariants:avalTbls cannot more than numTables
 		 * exceptions:InterruptedException
 		 */
-		//TODO synchronization
-		//synchronize while(!enterCoffeeShop()) wait();
-		try{
-			if (order == null || order.size() == 0){
-				leaveCoffeeShop();
-				return;
+//		synchronized (Simulation.customerIn){
+//			while (!(Simulation.customerIn.size() < capacity)){
+//				try{
+//					Simulation.customerIn.wait();
+//				}catch (InterruptedException e){
+//					e.printStackTrace();
+//				}
+//			}
+//			Simulation.customerIn.add(this);
+//			Simulation.customerIn.notifyAll();
+//		}
+
+		synchronized (Simulation.customerOrder){
+			while (Simulation.customerOrder.size() >= capacity){
+				try {
+					Simulation.customerOrder.wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
-			if (!enterCoffeeShop()){
-				wait();
+			Simulation.logEvent(SimulationEvent.customerEnteredCoffeeShop(this));
+			Simulation.customerOrder.put(this, order);
+			Simulation.customerOrder.notifyAll();
+		}
+		synchronized (Simulation.ordersCompleted){
+			while (!Simulation.ordersCompleted.contains(this)){
+				try {
+					Simulation.ordersCompleted.wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
-
-
-			leaveCoffeeShop();
-		}catch (InterruptedException e){
-
-		}
-		
-	}
-
-	private synchronized boolean enterCoffeeShop(){
-		if (avalTbls > 0){
-			avalTbls--;
-			return true;
-		}else {
-			return false;
+			Simulation.ordersCompleted.notifyAll();
 		}
 	}
 
-	private synchronized boolean leaveCoffeeShop(){
-		if (avalTbls < numTables){
-			avalTbls++;
-		}
-		return true;
-	}
 
 	public int getPriority(){
 		return this.priority;

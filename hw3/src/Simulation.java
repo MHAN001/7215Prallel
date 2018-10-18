@@ -1,14 +1,17 @@
-import java.util.Collections;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Simulation is the main class used to run the simulation.  You may
  * add any fields (static or instance) or any methods you wish.
  */
 public class Simulation {
+	public static Queue<Customer> customerIn;
+	//customer with order
+	public static TreeMap<Customer, List<Food>> customerOrder;
+	public static List<Customer> ordersCompleted;
+	public static Machine Grill;
+	public static Machine Frier;
+	public static Machine Star;
 	// List to track simulation events during simulation
 	public static List<SimulationEvent> events;
 	/**
@@ -67,20 +70,31 @@ public class Simulation {
 
 
 		// Set things up you might need
-
-
+		customerOrder = new TreeMap<>(new Comparator<Customer>() {
+			@Override
+			public int compare(Customer o1, Customer o2) {
+				return o1.getPriority()-o2.getPriority();
+			}
+		});
+		ordersCompleted = new LinkedList<>();
+		customerIn = new LinkedList<>();
 		// Start up machines
-
-
-
+		Grill = new Machine("Grill", FoodType.burger, machineCapacity);
+		Frier = new Machine("Frier", FoodType.fries, machineCapacity);
+		Star = new Machine("Star", FoodType.coffee, machineCapacity);
 		// Let cooks in
+		Thread[] cooks = new Thread[numCooks];
 
+		for (int i = 0; i < numCooks; i++) {
+			cooks[i] = new Thread(new Cook("cooke:"+ i));
+			cooks[i].start();
+		}
 
 		// Build the customers.
 		Thread[] customers = new Thread[numCustomers];
 		LinkedList<Food> order;
 		if (!randomOrders) {
-			order = new LinkedList<Food>();
+			order = new LinkedList<>();
 			order.add(FoodType.burger);
 			order.add(FoodType.fries);
 			order.add(FoodType.fries);
@@ -96,7 +110,7 @@ public class Simulation {
 			}
 		}
 		else {
-			for(int i = 0; i < customers.length; i++) {
+			for(int i = 0, j = 1; i < customers.length; i++) {
 				Random rnd = new Random(27);
 				int burgerCount = rnd.nextInt(3);
 				int friesCount = rnd.nextInt(3);
@@ -111,11 +125,16 @@ public class Simulation {
 				for (int c = 0; c < coffeeCount; c++) {
 					order.add(FoodType.coffee);
 				}
-
+				if (j >= 3){
+					j = 1;
+				}
 				customers[i] = new Thread(
-						new Customer("Customer " + (i+1), order, 1, numTables)// TODO: change priority to test
+						new Customer("Customer " + (i+1), order, j, numTables)// TODO: change priority to test
 						);
+				//ordersWithPrior.put(j, order);
+				j++;
 			}
+
 		}
 
 
@@ -140,27 +159,23 @@ public class Simulation {
 			 * invariants: cooks cannot more than customers.
 			 * exceptions: InterruptedException
 			 */
-			//TODO: validate this list of cooks to handle orders from customers
-			//pseudo code
-//			while (Thread.activeCount() <= customers.length){
-//				wait();
-//			}
-			Thread[] cooks = new Thread[numCooks];
-			for (int i = 0; i < numCooks; i++) {
-				cooks[i] = new Thread(new Cook("cooke:"+ i, 20));
-				cooks[i].start();
+			for (int i = 0; i < customers.length; i++) {
+				customers[i].join();
 			}
-			
 
 			// Then send cooks home...
 			// The easiest way to do this might be the following, where
 			// we interrupt their threads.  There are other approaches
 			// though, so you can change this if you want to.
-			for(int i = 0; i < cooks.length; i++)
+			for(int i = 0; i < cooks.length; i++){
 				cooks[i].interrupt();
+				logEvent(SimulationEvent.machineEnding(Grill));
+				logEvent(SimulationEvent.machineEnding(Frier));
+				logEvent(SimulationEvent.machineEnding(Star));
+			}
+
 			for(int i = 0; i < cooks.length; i++)
 				cooks[i].join();
-
 		}
 		catch(InterruptedException e) {
 			System.out.println("Simulation thread interrupted.");
@@ -177,7 +192,6 @@ public class Simulation {
 
 		return events;
 	}
-
 	/**
 	 * Entry point for the simulation.
 	 *

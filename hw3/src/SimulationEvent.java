@@ -28,7 +28,7 @@ public class SimulationEvent {
     	MachineStartingFood,
     	MachineDoneFood,
     	MachineEnding    			
-    };
+    }
     public final EventType event;
     /* Not all of these fields are relevant for every event; 
        see factory methods below */
