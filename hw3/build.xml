@@ -1,0 +1,39 @@
+<?xml version = "1.0"?>
+<project name="hw2" default="run">
+    <property name="src.dir" value="src" />
+    <property name="lib.dir" value="lib" />
+    <property name="output.dir" value="output/production/hw3" />
+
+    <path id = "master-classpath">
+        <fileset dir = "${lib.dir}">
+            <include name = "*.jar"/>
+        </fileset>
+
+        <pathelement path = "${output.dir}"/>
+    </path>
+
+    <target name="build" description="Compile source tree java files">
+        <mkdir dir="${output.dir}"/>
+
+        <javac destdir="${output.dir}" includeantruntime="yes">
+            <src path="${src.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+    </target>
+
+    <target name="simulate" description="Execute compiled Simulation Class">
+        <java classname="Simulation">
+            <classpath refid="master-classpath" />
+        </java>
+    </target>
+
+    <target name = "clean" description = "Clean output directories">
+        <delete dir="${output.dir}" />
+    </target>
+
+    <target name="run">
+        <antcall target="build" />
+        <antcall target="simulate" />
+        <antcall target="clean" />
+    </target>
+</project>

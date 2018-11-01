@@ -5,10 +5,9 @@ import java.util.*;
  * add any fields (static or instance) or any methods you wish.
  */
 public class Simulation {
-	public static Queue<Customer> customerIn;
 	//customer with order
 	public static TreeMap<Customer, List<Food>> customerOrder;
-	public static List<Customer> ordersCompleted;
+	public static Queue<Customer> customerIn;
 	public static Machine Grill;
 	public static Machine Frier;
 	public static Machine Star;
@@ -24,12 +23,12 @@ public class Simulation {
 	}
 
 	/**
-	 * 	Function responsible for performing the simulation. Returns a List of 
+	 * 	Function responsible for performing the simulation. Returns a List of
 	 *  SimulationEvent objects, constructed any way you see fit. This List will
 	 *  be validated by a call to Validate.validateSimulation. This method is
-	 *  called from Simulation.main(). We should be able to test your code by 
+	 *  called from Simulation.main(). We should be able to test your code by
 	 *  only calling runSimulation.
-	 *  
+	 *
 	 *  Parameters:
 	 *	@param numCustomers the number of customers wanting to enter the coffee shop
 	 *	@param numCooks the number of cooks in the simulation
@@ -40,7 +39,7 @@ public class Simulation {
 	 */
 	public static List<SimulationEvent> runSimulation(
 			int numCustomers, int numCooks,
-			int numTables, 
+			int numTables,
 			int machineCapacity,
 			boolean randomOrders
 			) {
@@ -50,11 +49,11 @@ public class Simulation {
 		 * invariants: numCooks not more than numCustomers
 		 * exceptions: illegal input results to format exception
 		 */
-		//This method's signature MUST NOT CHANGE.  
+		//This method's signature MUST NOT CHANGE.
 
 
-		//We are providing this events list object for you.  
-		//  It is the ONLY PLACE where a concurrent collection object is 
+		//We are providing this events list object for you.
+		//  It is the ONLY PLACE where a concurrent collection object is
 		//  allowed to be used.
 		events = Collections.synchronizedList(new ArrayList<SimulationEvent>());
 
@@ -76,7 +75,6 @@ public class Simulation {
 				return o1.getPriority()-o2.getPriority();
 			}
 		});
-		ordersCompleted = new LinkedList<>();
 		customerIn = new LinkedList<>();
 		// Start up machines
 		Grill = new Machine("Grill", FoodType.burger, machineCapacity);
@@ -86,7 +84,7 @@ public class Simulation {
 		Thread[] cooks = new Thread[numCooks];
 
 		for (int i = 0; i < numCooks; i++) {
-			cooks[i] = new Thread(new Cook("cooke:"+ i));
+			cooks[i] = new Thread(new Cook("cook"+ i));
 			cooks[i].start();
 		}
 
@@ -142,14 +140,7 @@ public class Simulation {
 		//    starting them running in their own thread.
 		for(int i = 0; i < customers.length; i++) {
 			customers[i].start();
-			//NOTE: Starting the customer does NOT mean they get to go
-			//      right into the shop.  There has to be a table for
-			//      them.  The Customer class' run method has many jobs
-			//      to do - one of these is waiting for an available
-			//      table...
 		}
-
-
 		try {
 			// Wait for customers to finish
 			//   -- you need to add some code here...
@@ -169,11 +160,10 @@ public class Simulation {
 			// though, so you can change this if you want to.
 			for(int i = 0; i < cooks.length; i++){
 				cooks[i].interrupt();
-				logEvent(SimulationEvent.machineEnding(Grill));
-				logEvent(SimulationEvent.machineEnding(Frier));
-				logEvent(SimulationEvent.machineEnding(Star));
 			}
-
+			logEvent(SimulationEvent.machineEnding(Grill));
+			logEvent(SimulationEvent.machineEnding(Frier));
+			logEvent(SimulationEvent.machineEnding(Star));
 			for(int i = 0; i < cooks.length; i++)
 				cooks[i].join();
 		}
@@ -214,10 +204,10 @@ public class Simulation {
 		int machineCapacity = new Integer(args[3]).intValue();
 		boolean randomOrders = new Boolean(args[4]);
 		 */
-		int numCustomers = 10;
-		int numCooks =1;
-		int numTables = 5;
-		int machineCapacity = 4;
+		int numCustomers = 100;
+		int numCooks =10;
+		int numTables = 50;
+		int machineCapacity = 10;
 		boolean randomOrders = false;
 
 

@@ -1,6 +1,7 @@
 import com.sun.org.apache.bcel.internal.generic.SIPUSH;
 import sun.awt.im.SimpleInputMethodWindow;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -46,13 +47,13 @@ public class Cook implements Runnable {
 			int i = 0;
 			while(true) {
 				synchronized (Simulation.customerOrder){
-					while (Simulation.customerOrder == null || Simulation.customerOrder.size() == 0){
-						Simulation.customerOrder.wait();
+					while (Simulation.customerOrder.isEmpty()){
+						Simulation.customerOrder.wait(100);
 					}
 					Simulation.customerOrder.notifyAll();
 					Customer custtmp = Simulation.customerOrder.firstKey();
-					List<Food> tmp = Simulation.customerOrder.get(custtmp);
-					for (Food f : tmp){
+					List<Food> orderIn = Simulation.customerOrder.get(custtmp);
+					for (Food f : orderIn){
 						Machine m;
 						if (f.name.equals("burger")){
 							m = Simulation.Grill;
@@ -71,22 +72,20 @@ public class Cook implements Runnable {
 							}
 						}
 					}
+//					Simulation.customerOrder.notifyAll();
 					synchronized (foodsDone){
-						while (foodsDone.size() != tmp.size()){
+						while (foodsDone.size() != orderIn.size()){
 							foodsDone.wait();
 							foodsDone.notifyAll();
 						}
 					}
-					synchronized (Simulation.ordersCompleted){
-						Simulation.ordersCompleted.add(custtmp);
+
+					synchronized (Simulation.customerOrder){
 						Simulation.customerOrder.remove(custtmp);
-						Simulation.logEvent(SimulationEvent.customerLeavingCoffeeShop(custtmp));
-						Simulation.ordersCompleted.notifyAll();
 						Simulation.customerOrder.notifyAll();
 					}
 					foodsDone = new LinkedList<>();
 				}
-				Simulation.logEvent(SimulationEvent.cookEnding(this));
 				/**
 				 * pre-condition: customers come with order. logEvent run successfully
 				 * post-condition: submit orders to machines, notify customers once order done

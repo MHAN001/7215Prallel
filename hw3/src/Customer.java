@@ -11,7 +11,7 @@ public class Customer implements Runnable {
 	//JUST ONE SET OF IDEAS ON HOW TO SET THINGS UP...
 	private final String name;
 	private final List<Food> order;
-	private final int orderNum;    
+	public final int orderNum;
 	
 	private static int runningCounter = 0;
 	private final int capacity;
@@ -48,39 +48,41 @@ public class Customer implements Runnable {
 		 * invariants:avalTbls cannot more than numTables
 		 * exceptions:InterruptedException
 		 */
-//		synchronized (Simulation.customerIn){
-//			while (!(Simulation.customerIn.size() < capacity)){
-//				try{
-//					Simulation.customerIn.wait();
-//				}catch (InterruptedException e){
-//					e.printStackTrace();
-//				}
-//			}
-//			Simulation.customerIn.add(this);
-//			Simulation.customerIn.notifyAll();
-//		}
+		//bounded queue
+		synchronized (Simulation.customerIn){
+			while (Simulation.customerIn.size() >= capacity){
+				try{
+					Simulation.customerIn.wait();
+				}catch (InterruptedException e){
+					e.printStackTrace();
+				}
+			}
+			Simulation.customerIn.add(this);
+			Simulation.logEvent(SimulationEvent.customerEnteredCoffeeShop(this));
+			Simulation.customerIn.notifyAll();
+		}
 
 		synchronized (Simulation.customerOrder){
-			while (Simulation.customerOrder.size() >= capacity){
+			Simulation.customerOrder.put(this, order);
+		}
+		Simulation.logEvent(SimulationEvent.customerPlacedOrder(this, this.order, this.orderNum));
+
+		synchronized (Simulation.customerOrder){
+			while (Simulation.customerOrder.containsKey(this)){
 				try {
 					Simulation.customerOrder.wait();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}
-			Simulation.logEvent(SimulationEvent.customerEnteredCoffeeShop(this));
-			Simulation.customerOrder.put(this, order);
 			Simulation.customerOrder.notifyAll();
+			Simulation.logEvent(SimulationEvent.customerReceivedOrder(this, order, orderNum));
 		}
-		synchronized (Simulation.ordersCompleted){
-			while (!Simulation.ordersCompleted.contains(this)){
-				try {
-					Simulation.ordersCompleted.wait();
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-			Simulation.ordersCompleted.notifyAll();
+
+		synchronized (Simulation.customerIn){
+			Simulation.customerIn.remove(this);
+			Simulation.logEvent(SimulationEvent.customerLeavingCoffeeShop(this));
+			Simulation.customerIn.notifyAll();
 		}
 	}
 

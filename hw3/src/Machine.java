@@ -88,7 +88,7 @@ public class Machine{
 	}
  
 	public synchronized boolean getMachineAvail(){
-		return this.foods.size() <= this.capacity;
+		return this.foods.size() < this.capacity;
 	}
 	public String toString() {
 		return machineName;

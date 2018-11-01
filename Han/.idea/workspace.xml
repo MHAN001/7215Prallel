@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f6e23c6-c940-4da2-bb22-eca204bbb262" name="Default" comment="" />
+    <list default="true" id="3f6e23c6-c940-4da2-bb22-eca204bbb262" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/output/production/hw3/Machine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/output/production/hw3/Machine$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/output/production/hw3/Machine$CookAnItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/output/production/hw3/Machine$CookAnItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/output/production/hw3/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/output/production/hw3/Machine.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +31,19 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-597564648">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParallelMaximizer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -40,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PublicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
+            <state relative-caret-position="1219">
               <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,17 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/.idea/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
+            <state relative-caret-position="828">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="46">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -70,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParallelMaximizerWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
+            <state relative-caret-position="1150">
               <caret line="51" column="73" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,10 +109,15 @@
       <find>par</find>
       <find>partial</find>
       <find>sum</find>
+      <find>master-classpath</find>
+      <find>value</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\xu han\7215\hw1</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -120,29 +143,41 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="y" value="-15" />
-    <option name="width" value="2768" />
-    <option name="height" value="1855" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2762" />
+    <option name="height" value="1850" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw1" type="462c0819:PsiDirectoryNode" />
+              <item name="Han" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Han" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Han" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Han" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Han" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Han" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Han" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Han" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -153,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hw2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -288,6 +323,7 @@
       <workItem from="1537104660292" duration="6000" />
       <workItem from="1537104758595" duration="163000" />
       <workItem from="1537203194453" duration="15000" />
+      <workItem from="1540999893935" duration="894000" />
     </task>
     <servers />
   </component>
@@ -324,12 +360,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16852000" />
+    <option name="totallyTimeSpent" value="17746000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1107" height="742" extended-state="6" />
+    <frame x="-6" y="-6" width="1381" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14871307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15117158" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,7 +437,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PublicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
+        <state relative-caret-position="1219">
           <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -410,27 +447,27 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/.idea/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
+        <state relative-caret-position="828">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParallelMaximizerWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
+        <state relative-caret-position="1150">
           <caret line="51" column="73" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1793#1794#0" expanded="true" />
             <element signature="e#1817#1818#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
