@@ -48,7 +48,7 @@ public class Cook implements Runnable {
 			while(true) {
 				synchronized (Simulation.customerOrder){
 					while (Simulation.customerOrder.isEmpty()){
-						Simulation.customerOrder.wait(100);
+						Simulation.customerOrder.wait(80);
 					}
 					Simulation.customerOrder.notifyAll();
 					Customer custtmp = Simulation.customerOrder.firstKey();

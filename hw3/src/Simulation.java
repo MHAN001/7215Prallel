@@ -208,7 +208,7 @@ public class Simulation {
 		int numCooks =10;
 		int numTables = 50;
 		int machineCapacity = 10;
-		boolean randomOrders = false;
+		boolean randomOrders = true;
 
 
 		// Run the simulation and then 
