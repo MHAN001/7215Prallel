@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5fcb7f0-a93b-4c02-af46-3c0db8262f7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Han/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/xu_han.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Han/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Han/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/hw3/Cook.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/hw3/Cook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/hw3/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/hw3/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/hw3/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/hw3/Machine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/hw3/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/hw3/Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +14,7 @@
     <session id="1528052954">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="6" />
@@ -41,31 +28,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="27" />
+          <entry key="class" value="4" />
+          <entry key="java" value="28" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="27" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="28" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="10844" />
-          <entry key="txt" value="79" />
+          <entry key="java" value="10850" />
+          <entry key="txt" value="94" />
           <entry key="xml" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="10844" />
-          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="JAVA" value="10850" />
+          <entry key="PLAIN_TEXT" value="94" />
           <entry key="XML" value="45" />
         </counts>
       </usages-collector>
@@ -88,6 +75,15 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/SimulationEvent.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="900">
+                  <caret line="122" column="28" lean-forward="true" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/FoodType.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="184">
@@ -99,7 +95,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Machine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
+                <state relative-caret-position="831">
                   <caret line="81" column="43" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="43" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -126,11 +122,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Simulation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="77" selection-start-line="77" selection-end-line="77" />
+                <state relative-caret-position="4830">
+                  <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
                   <folding>
                     <element signature="e#2472#2473#0" expanded="true" />
                     <element signature="e#2523#2524#0" expanded="true" />
@@ -157,11 +153,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Cook.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="626">
-                  <caret line="82" selection-start-line="82" selection-end-line="82" />
+                <state relative-caret-position="488">
+                  <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -176,8 +172,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Customer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+                <state relative-caret-position="238">
+                  <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
                   <folding>
                     <element signature="e#3082#3083#0" expanded="true" />
                     <element signature="e#3109#3110#0" expanded="true" />
@@ -261,9 +257,9 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/Machine.java" />
         <option value="$PROJECT_DIR$/src/PlaceOrder.java" />
-        <option value="$PROJECT_DIR$/src/Cook.java" />
-        <option value="$PROJECT_DIR$/src/Simulation.java" />
         <option value="$PROJECT_DIR$/src/Customer.java" />
+        <option value="$PROJECT_DIR$/src/Simulation.java" />
+        <option value="$PROJECT_DIR$/src/Cook.java" />
       </list>
     </option>
   </component>
@@ -301,24 +297,6 @@
             </path>
             <path>
               <item name="xu_han" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xu_han" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xu_han" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="hw3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xu_han" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -334,8 +312,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541032244373" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541033891432" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebApps/SpringApp/JsonSchema" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -446,7 +424,7 @@
       <workItem from="1539891965825" duration="51000" />
       <workItem from="1540153357407" duration="19000" />
       <workItem from="1540999567068" duration="10205000" />
-      <workItem from="1541025384144" duration="5657000" />
+      <workItem from="1541025384144" duration="6737000" />
     </task>
     <task id="LOCAL-00001" summary="added some changes and todos">
       <created>1538428945145</created>
@@ -462,11 +440,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538946056907</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Submit version">
+      <created>1541032285108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541032285108</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Submit version">
+      <created>1541032464660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541032464660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68893000" />
+    <option name="totallyTimeSpent" value="69973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,7 +471,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1111" y="-2167" width="2575" height="1455" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06640159" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -489,7 +480,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.2934947" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2934947" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37367624" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33207262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -497,7 +488,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.09455371" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.42889562" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2655068" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32952183" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -550,7 +541,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added some changes and todos" />
     <MESSAGE value="ready to start code" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready to start code" />
+    <MESSAGE value="Submit version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit version" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -648,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FoodType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -710,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Machine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="81" column="43" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PlaceOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -727,20 +702,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cook.java">
+    <entry file="file://$PROJECT_DIR$/output/production/hw3/PlaceOrder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#640#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="4830">
+          <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
           <folding>
             <element signature="e#2472#2473#0" expanded="true" />
             <element signature="e#2523#2524#0" expanded="true" />
@@ -750,15 +724,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimulationEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2762">
+        <state relative-caret-position="900">
           <caret line="122" column="28" lean-forward="true" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="81" column="43" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
             <element signature="e#3082#3083#0" expanded="true" />
             <element signature="e#3109#3110#0" expanded="true" />
