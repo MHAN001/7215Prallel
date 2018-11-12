@@ -2,52 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b47a009b-47d8-4743-a85c-9ad9d660b47a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/.idea/cmsc433_p4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/10000x10000u.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/1000x1000.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/200x200.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/200x200u.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/5000x5000.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/500x500.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/mazes1/6x6.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Choice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Direction$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Direction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Maze$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Maze.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/MazeDisplay$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/MazeDisplay$MListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/MazeDisplay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/MazeInputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/MazeSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Move.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Position$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/Position.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/STMazeSolverBFS$SolutionNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/STMazeSolverBFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/STMazeSolverDFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/STMazeSolverRec.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/SkippingMazeSolver$SolutionFound.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/SkippingMazeSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/output/production/cmsc433_p4/StudentMTMazeSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/Choice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/Maze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/MazeDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/MazeInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/MazeSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/STMazeSolverBFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/STMazeSolverDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/STMazeSolverRec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/SkippingMazeSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cmsc433_p4/src/StudentMTMazeSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Choice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/MazeDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/MazeInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/MazeSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STMazeSolverBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STMazeSolverDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STMazeSolverRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SkippingMazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/SkippingMazeSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentMTMazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Direction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Maze$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Maze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/MazeDisplay$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/MazeDisplay$MListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/MazeDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/MazeInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/MazeSolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Position$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/STMazeSolverBFS$SolutionNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/STMazeSolverBFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/STMazeSolverDFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/STMazeSolverRec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/SkippingMazeSolver$SolutionFound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/SkippingMazeSolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/Solution/StudentMTMazeSolver.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,35 +51,39 @@
     <session id="1910660909">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="20" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="31" />
+          <entry key="mz" value="3" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="31" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="36" />
+          <entry key="java" value="39" />
           <entry key="txt" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="39" />
           <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
@@ -96,87 +92,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Maze.java">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state relative-caret-position="115">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Direction.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Direction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="69">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeSolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Move.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/SkippingMazeSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1466">
-              <caret line="232" column="20" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/ObjectInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8395">
-              <caret line="411" column="24" selection-start-line="411" selection-start-column="24" selection-end-line="411" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11845">
-              <caret line="554" column="18" selection-start-line="554" selection-start-column="18" selection-end-line="554" selection-end-column="18" />
-              <folding>
-                <element signature="e#23018#23019#0" expanded="true" />
-                <element signature="e#23057#23058#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Choice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MazeSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Move.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentMTMazeSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="161">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -216,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/STMazeSolverRec.java" />
         <option value="$PROJECT_DIR$/src/StudentMTMazeSolver.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java" />
       </list>
     </option>
   </component>
@@ -237,6 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,7 +245,8 @@
             <path>
               <item name="Solution" type="b2602c69:ProjectViewProjectNode" />
               <item name="Solution" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsc433_p4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Solution" type="b2602c69:ProjectViewProjectNode" />
@@ -264,13 +258,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541799557947" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542038748292" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hw3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -298,7 +291,7 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="cmsc433_p4.Main" />
       <module name="Solution" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -353,7 +346,9 @@
       <workItem from="1541797296542" duration="1498000" />
       <workItem from="1541808683935" duration="74000" />
       <workItem from="1541883066335" duration="1343000" />
-      <workItem from="1541948992864" duration="542000" />
+      <workItem from="1541948992864" duration="607000" />
+      <workItem from="1541975140373" duration="2154000" />
+      <workItem from="1541977794354" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="changes in surface">
       <created>1541797489293</created>
@@ -373,12 +368,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3457000" />
+    <option name="totallyTimeSpent" value="5878000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18896447" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19501133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,15 +391,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32980332" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5491184" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32871535" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299748" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2581864" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -420,51 +425,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="add maze" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MazeDisplay.java">
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverBFS.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverDFS.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SkippingMazeSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/STMazeSolverBFS.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/STMazeSolverDFS.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/STMazeSolverRec.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MazeInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Direction.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/ObjectInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8395">
-          <caret line="411" column="24" selection-start-line="411" selection-start-column="24" selection-end-line="411" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -477,41 +442,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Choice.java">
+    <entry file="file://$PROJECT_DIR$/mazes1/200x200.mz">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        <state relative-caret-position="92">
+          <caret line="4" column="22" selection-start-line="4" selection-end-line="4" selection-end-column="127" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MazeSolver.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/ObjectInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentMTMazeSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="23">
+          <caret line="411" column="24" selection-start-line="411" selection-start-column="24" selection-end-line="411" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1466">
-          <caret line="232" column="20" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
+        <state relative-caret-position="4968">
+          <caret line="216" column="13" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Choice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Direction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mazes1/6x6.mz">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/SkippingMazeSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
