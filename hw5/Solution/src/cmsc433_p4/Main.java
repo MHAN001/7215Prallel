@@ -30,10 +30,10 @@ public class Main
         // Add your solvers to this array to test them.
         MazeSolver[] solvers =
         {
-        		new STMazeSolverRec(maze),
+//        		new STMazeSolverRec(maze),
                 new STMazeSolverDFS(maze),
                 new STMazeSolverBFS(maze), 
-                //new cmsc433_p4.StudentMTMazeSolver(maze),  //uncomment this line when you are ready to test yours
+                new cmsc433_p4.StudentMTMazeSolver(maze)  //uncomment this line when you are ready to test yours
         };
 
         for (MazeSolver solver : solvers)
@@ -100,7 +100,7 @@ public class Main
         }
         
         // Uncomment to use maze display
-        //m.initDisplay();
+        m.initDisplay();
         
         m.solve();
     }
