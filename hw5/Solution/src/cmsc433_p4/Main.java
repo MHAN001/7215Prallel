@@ -79,7 +79,7 @@ public class Main
  
         //These lines are to run via Eclipse without a command prompt
         String mazeLocationNotInProjectFolder = "mazes1/"; //replace this with your maze directory
-        String whichMazeToUse = "200x200.mz"; //which maze file to load
+        String whichMazeToUse = "5000x5000.mz"; //which maze file to load
         String[] replaceArgs = {mazeLocationNotInProjectFolder+whichMazeToUse};
         args = replaceArgs;
         
@@ -100,7 +100,7 @@ public class Main
         }
         
         // Uncomment to use maze display
-        m.initDisplay();
+//        m.initDisplay();
         
         m.solve();
     }

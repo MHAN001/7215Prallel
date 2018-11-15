@@ -3,7 +3,9 @@ package cmsc433_p4;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 /**
  * This file needs to hold your solver to be tested. 
@@ -15,7 +17,7 @@ import java.util.concurrent.*;
  */
 public class StudentMTMazeSolver extends SkippingMazeSolver
 {
-    private final int numProcessors;
+    private final int numProcessors; /* Number of worker threads*/
     private final ExecutorService pool;
 
     public StudentMTMazeSolver(Maze maze)
@@ -27,56 +29,49 @@ public class StudentMTMazeSolver extends SkippingMazeSolver
 
     @Override
     public List<Direction> solve() {
-        LinkedList<Helper> tasks = new LinkedList<>();
-        List<Future<List<Direction>>> futures = new LinkedList<>();
-        List<Direction> res = null;
+        LinkedList<Helper> tasks = new LinkedList<>();//container for tasks
+        List<Future<List<Direction>>> futures = new LinkedList<>(); //container for the future tasks' result
+        List<Direction> res = null;//result
 
         try{
             Choice start = firstChoice(maze.getStart());
-
-            int size = start.choices.size();
-            for (int i = 0; i < size; i++) {
-                Choice currChoice = follow(start.at, start.choices.peek());
-
-                tasks.add(new Helper(currChoice, start.choices.pop()));
+            while (!start.choices.isEmpty()){
+                tasks.add(new Helper(follow(start.at, start.choices.peek()), start.choices.poll()));
             }
         } catch (SolutionFound solutionFound) {
             System.out.println("Solution found");
         }
         try{
+            //Executor service would return a list of Futures holding their status and results when all complete.
             futures = pool.invokeAll(tasks);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        pool.shutdown();
         for (Future<List<Direction>> ans: futures) {
             try{
-                if (ans.get() != null){
+                if (ans.isDone() && ans.get() != null){
                     res = ans.get();
                 }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
+            } catch (Exception e){
                 e.printStackTrace();
             }
         }
-
+        pool.shutdown();
         return res;
     }
 
     @SuppressWarnings("Duplicates")
     private class Helper implements Callable<List<Direction>> {
-        Choice choice;
-        Direction choiceDirection;
+        private Choice choice;
+        private Direction choiceDirection;
 
-        public Helper(Choice choice, Direction choiceDirection) {
-            this.choice = choice;
+        Helper(Choice nextChoice, Direction choiceDirection) {
+            this.choice = nextChoice;
             this.choiceDirection = choiceDirection;
         }
 
         @Override
-        public List<Direction> call() throws Exception {
+        public List<Direction> call() {  //Exception handled inner function
             LinkedList<Choice> stack = new LinkedList<>();
             Choice currChoice;
 
