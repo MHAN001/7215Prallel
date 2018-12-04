@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b47a009b-47d8-4743-a85c-9ad9d660b47a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmsc433_p4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/production/Solution/cmsc433_p4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/Solution/cmsc433_p4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/production/Solution/cmsc433_p4/StudentMTMazeSolver$Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/Solution/cmsc433_p4/StudentMTMazeSolver$Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/production/Solution/cmsc433_p4/StudentMTMazeSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/Solution/cmsc433_p4/StudentMTMazeSolver.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,22 +14,23 @@
     <session id="1910660909">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="form" value="2" />
-          <entry key="java" value="57" />
+          <entry key="form" value="3" />
+          <entry key="java" value="58" />
           <entry key="mz" value="3" />
           <entry key="txt" value="1" />
           <entry key="xml" value="2" />
@@ -42,8 +38,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="GUI_DESIGNER_FORM" value="2" />
-          <entry key="JAVA" value="57" />
+          <entry key="GUI_DESIGNER_FORM" value="3" />
+          <entry key="JAVA" value="58" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="2" />
         </counts>
@@ -51,13 +47,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="3162" />
-          <entry key="txt" value="143" />
+          <entry key="txt" value="156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3162" />
-          <entry key="PLAIN_TEXT" value="143" />
+          <entry key="PLAIN_TEXT" value="156" />
         </counts>
       </usages-collector>
     </session>
@@ -67,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="73" column="75" selection-start-line="73" selection-start-column="75" selection-end-line="73" selection-end-column="75" />
+            <state relative-caret-position="564">
+              <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,19 +75,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Direction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeDisplay.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Deque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="11017">
               <caret line="512" column="54" selection-start-line="512" selection-start-column="52" selection-end-line="512" selection-end-column="54" />
             </state>
           </provider>
@@ -109,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/ExecutorService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
+            <state relative-caret-position="4623">
               <caret line="235" column="33" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="33" />
             </state>
           </provider>
@@ -118,8 +110,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
+            <state relative-caret-position="1633">
               <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/Callable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="64" column="29" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -136,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/SkippingMazeSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="989">
               <caret line="48" column="17" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="17" />
             </state>
           </provider>
@@ -145,21 +146,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverDFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="1288">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding>
                 <element signature="e#261#262#0" expanded="true" />
                 <element signature="e#288#289#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -175,7 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>head</find>
       <find>rec</find>
       <find>firstChoice</find>
       <find>maze</find>
@@ -205,6 +196,7 @@
       <find>pop</find>
       <find>tasks</find>
       <find>choice</find>
+      <find>call</find>
     </findStrings>
     <replaceStrings>
       <replace>solutions</replace>
@@ -260,11 +252,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1094" />
-    <option name="y" value="-2171" />
-    <option name="width" value="3863" />
-    <option name="height" value="2183" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="y" value="2" />
+    <option name="width" value="2756" />
+    <option name="height" value="1834" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -272,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,13 +293,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542301733028" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542301987205" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hw3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -395,7 +387,10 @@
       <workItem from="1541977794354" duration="202000" />
       <workItem from="1542040903407" duration="13050000" />
       <workItem from="1542156689965" duration="10078000" />
-      <workItem from="1542298134351" duration="2492000" />
+      <workItem from="1542298134351" duration="2930000" />
+      <workItem from="1542302303212" duration="277000" />
+      <workItem from="1543279176257" duration="242000" />
+      <workItem from="1543604757628" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="changes in surface">
       <created>1541797489293</created>
@@ -418,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542225139861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some changes">
+      <created>1542301804380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542301804380</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31498000" />
+    <option name="totallyTimeSpent" value="33061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,10 +436,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1090" y="-2167" width="2575" height="1455" extended-state="6" />
-    <editor active="true" />
+    <frame x="-5" y="1" width="1378" height="917" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49924356" visible="true" weight="0.23260437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49924356" visible="true" weight="0.24924242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -446,7 +447,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50075644" side_tool="true" weight="0.10417495" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3274559" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28290468" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28290468" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39863843" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -507,7 +508,8 @@
     <MESSAGE value="changes in surface" />
     <MESSAGE value="add maze" />
     <MESSAGE value="TODO add text to explain" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO add text to explain" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
@@ -625,9 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeDisplay.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -635,21 +634,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeInputStream.java">
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="564">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverDFS.java">
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="69">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11017">
+          <caret line="512" column="54" selection-start-line="512" selection-start-column="52" selection-end-line="512" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -662,48 +667,52 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/ExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
+        <state relative-caret-position="4623">
           <caret line="235" column="33" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
+        <state relative-caret-position="1633">
           <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Deque.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/Callable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="512" column="54" selection-start-line="512" selection-start-column="52" selection-end-line="512" selection-end-column="54" />
+        <state relative-caret-position="713">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/SkippingMazeSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="989">
           <caret line="48" column="17" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/Direction.java">
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/STMazeSolverDFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/StudentMTMazeSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="73" column="75" selection-start-line="73" selection-start-column="75" selection-end-line="73" selection-end-column="75" />
+        <state relative-caret-position="1288">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmsc433_p4/MazeDisplay.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
