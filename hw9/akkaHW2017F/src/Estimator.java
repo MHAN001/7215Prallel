@@ -1,5 +1,6 @@
 import java.io.File;
-import akka.actor.UntypedActor;
+
+import akka.actor.AbstractActor;
 
 /**
  * This is the main actor and the only actor that is created directly under the
@@ -11,15 +12,14 @@ import akka.actor.UntypedActor;
  *
  */
 // word counter class
-public class Estimator extends UntypedActor {
+public class Estimator extends AbstractActor {
+
+	@Override
+	public Receive createReceive() {
+		return null;
+	}
 
 	public Estimator() {
 
 	}
-
-	@Override
-	public void onReceive(Object msg) throws Throwable {
-
-	}
-
 }

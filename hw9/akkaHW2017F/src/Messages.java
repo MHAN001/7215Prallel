@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Messages that are passed around the actors are usually immutable classes.
  * Think how you go about creating immutable classes:) Make them all static
@@ -10,6 +13,31 @@
  * @author akashnagesh
  *
  */
-public class Messages {
+public final class Messages {
+    public static List<String> fileContent;
+    public List<String> firstHalves;
+    public List<String> secondHalves;
+    public String filePath;
+    public Integer count;
+    public List<String> eventsLoop;
 
+
+    private static Messages instance = null;
+
+
+    public Messages() {
+        fileContent = new ArrayList<>();
+        firstHalves = new ArrayList<>();
+        secondHalves = new ArrayList<>();
+        filePath = "data/Akka10.txt";
+        count = 0;
+        eventsLoop = new ArrayList<>();
+    }
+
+    public static Messages getInstance() {
+        if(instance == null) {
+            instance = new Messages();
+        }
+        return instance;
+    }
 }

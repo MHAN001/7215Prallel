@@ -1,3 +1,4 @@
+import akka.actor.AbstractActor;
 import akka.actor.ActorSystem;
 
 /**
@@ -6,7 +7,7 @@ import akka.actor.ActorSystem;
  * @author akashnagesh
  *
  */
-public class User {
+public class User extends AbstractActor {
 
 	public static void main(String[] args) throws Exception {
 		ActorSystem system = ActorSystem.create("EstimationSystem");
@@ -17,7 +18,12 @@ public class User {
 		 * Remember, there is only one actor directly under the ActorSystem.
 		 * Also, do not forget to shutdown the actorsystem
 		 */
+
 		System.out.println("create successfully");
 	}
 
+	@Override
+	public Receive createReceive() {
+		return null;
+	}
 }
