@@ -1,8 +1,13 @@
 import akka.actor.*;
+import scala.Int;
+import scala.concurrent.Await;
+import scala.concurrent.duration.Duration;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.concurrent.TimeUnit;
+
 /**
  * Main class for your estimation actor system.
  *
@@ -15,7 +20,7 @@ public class User extends UntypedAbstractActor {
 	private static volatile ActorRef Estimator1;
 	private static volatile ActorRef Estimator2;
 	private static volatile ActorRef Counter;
-
+	public static int FileAmount;
 
 	public static void main(String[] args) throws Exception {
 		ActorSystem system = ActorSystem.create("EstimationSystem");
@@ -30,8 +35,7 @@ public class User extends UntypedAbstractActor {
 		 Estimator2 = system.actorOf(estimator2Prop);
 		 Counter = system.actorOf(firstCounterProp);
 
-		 userActor.tell("start", null);
-		 system.terminate();
+		 userActor.tell("Start Process", null);
 		/*
 		 * Create the Estimator Actor and send it the StartProcessingFolder
 		 * message. Once you get back the response, use it to print the result.
@@ -44,12 +48,25 @@ public class User extends UntypedAbstractActor {
 
 	@Override
 	public void onReceive(Object message) throws Throwable {
-		File folder = new File("../data");
-		for (File f : folder.listFiles()){
-			StringBuffer sb = readFiles(f);
-			//TODO: Send sb to estimators and counter.
-			
+
+		if (message instanceof String){
+			File folder = new File("../data");
+			File[] allFiles = folder.listFiles();
+			FileAmount = allFiles.length;
+			for (File f : allFiles){
+				StringBuffer sb = readFiles(f);
+//				Estimator1.tell(sb, getSelf());
+//				Estimator2.tell(sb, getSender());
+//				Counter.tell(sb, getSelf());
+				Messages m = new Messages(sb, allFiles.length, f.getName());
+				context().system().eventStream().publish(m);
+			}
+		}else if (message instanceof Messages.EstimatorRes){
+			System.out.println("Estimator: "+ getSender().path().name() +" With C(t): "+((Messages.EstimatorRes) message).getCt() + "Average" + ((Messages.EstimatorRes) message).getAvg());
+		}else if (message instanceof Messages.CounterRes){
+			System.out.println("Counter" + getSender().path().name() + "With U(t): " + ((Messages.CounterRes) message).getUt());
 		}
+
 	}
 
 	private static StringBuffer readFiles(File file){

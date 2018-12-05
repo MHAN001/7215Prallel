@@ -18,4 +18,8 @@ public class FirstCounter extends AbstractActor {
 		// TODO Auto-generated constructor stub
 	}
 
+	private int CountVowels(){
+
+	}
+
 }

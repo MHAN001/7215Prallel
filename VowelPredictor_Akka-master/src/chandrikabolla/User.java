@@ -34,7 +34,7 @@ static final Timeout timeout=new Timeout(10,TimeUnit.SECONDS);
 		
 		//Create the Estimator(WordCounter) Actor and send it the StartProcessingFolder message.
          wordCounterNode= system.actorOf(WordCountActor.props, "wordCounter_Node");
-        wordCounterNode.tell("StartProcessingMessage", null);
+		wordCounterNode.tell("StartProcessingMessage", null);
 //        system.terminate();
   	//Promise<Object> future=  (Promise<Object>) Patterns.ask(estimatorNode,"ready?",1000000);
    // 		String result= (String) Await.result((Awaitable<Object>) future,timeout.duration());

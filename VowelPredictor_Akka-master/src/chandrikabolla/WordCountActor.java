@@ -104,7 +104,7 @@ public class WordCountActor extends UntypedActor {
 	}
 	
 	public void processFolder(){
-		File dir=new File("D:\\7215\\7215Prallel\\akka_ref\\data");
+		File dir=new File("C:\\Users\\xu han\\7215\\7215Prallel\\akka_ref\\data");
 		File[] directoryListing=dir.listFiles();
 		if(directoryListing!=null)
 		{

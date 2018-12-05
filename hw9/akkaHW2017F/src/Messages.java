@@ -1,4 +1,7 @@
+import org.omg.CORBA.PRIVATE_MEMBER;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -14,81 +17,79 @@ import java.util.List;
  *
  */
 public final class Messages {
-    private static StringBuffer fileContent;
-    private List<String> firstHalves;
-    private List<String> secondHalves;
-    private String filePath;
-    private Integer count;
-    private List<String> eventsLoop;
+    private StringBuffer fileContent;
+//    private HashMap<Integer, StringBuffer> textList;
+    private int fileAmount;
+    private String fileName;
 
 
-    private static Messages instance = null;
+    public static class EstimatorRes{
+        private double Ct;
+        private double Avg;
 
-    public static StringBuffer getFileContent() {
+        public EstimatorRes(double ct, double avg) {
+            Ct = ct;
+            Avg = avg;
+        }
+
+        public double getCt() {
+            return Ct;
+        }
+
+        public double getAvg() {
+            return Avg;
+        }
+    }
+
+    public static class CounterRes{
+        private double Ut;
+
+        public CounterRes(double ut) {
+            Ut = ut;
+        }
+
+        public double getUt() {
+            return Ut;
+        }
+    }
+
+    public StringBuffer getFileContent() {
         return fileContent;
     }
 
-    public static void setFileContent(StringBuffer fileContent) {
-        Messages.fileContent = fileContent;
+    public void setFileContent(StringBuffer fileContent) {
+        this.fileContent = fileContent;
     }
 
-    public List<String> getFirstHalves() {
-        return firstHalves;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFirstHalves(List<String> firstHalves) {
-        this.firstHalves = firstHalves;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
-    public List<String> getSecondHalves() {
-        return secondHalves;
+    public static Messages getInstance() {
+        return instance;
     }
 
-    public void setSecondHalves(List<String> secondHalves) {
-        this.secondHalves = secondHalves;
+    public int getFileAmount() {
+        return fileAmount;
     }
 
-    public String getFilePath() {
-        return filePath;
+    public void setFileAmount(int fileAmount) {
+        this.fileAmount = fileAmount;
     }
 
-    public void setFilePath(String filePath) {
-        this.filePath = filePath;
-    }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
-    public List<String> getEventsLoop() {
-        return eventsLoop;
-    }
-
-    public void setEventsLoop(List<String> eventsLoop) {
-        this.eventsLoop = eventsLoop;
-    }
+    private static Messages instance = null;
 
     public static void setInstance(Messages instance) {
         Messages.instance = instance;
     }
 
-    private Messages() {
-        fileContent = new StringBuffer();
-        firstHalves = new ArrayList<>();
-        secondHalves = new ArrayList<>();
-        filePath = "data/Akka10.txt";
-        count = 0;
-        eventsLoop = new ArrayList<>();
-    }
-
-    public static Messages getInstance() {
-        if(instance == null) {
-            instance = new Messages();
-        }
-        return instance;
+    public Messages(StringBuffer fileContent, int fileAmount, String fileName) {
+        this.fileContent = fileContent;
+        this.fileAmount = fileAmount;
+        this.fileName = fileName;
     }
 }

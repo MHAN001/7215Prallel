@@ -15,22 +15,42 @@ import akka.actor.UntypedAbstractActor;
 // word counter class
 public class Estimator extends UntypedAbstractActor {
 	private final double initialC = 0.1;
+	private int C;
+	private final double g = 0.5;
+	private int txtId = 0;
 
 	@Override
 	public void onReceive(Object message) throws Throwable {
-		if (message instanceof Integer){
-			Messages.getInstance().getCount();//Useless
+		if (message instanceof Messages){
+			//when receive text from user
 
+		}else if (message instanceof Messages.CounterRes){
+			//when receive U(t) from Counter
+			double C1 = getEstimateC()
 		}
 	}
 
 	public Estimator() {}
 
-	private int estimateC(char[] text){
-		int count = 0;
-
-		for (char c : ){
-
+	private double getEstimateC(char[] text){
+		if (txtId == 0){
+			return initialC;
 		}
+		int count = 0;
+		for (char c : text){
+			if (isVowel(c)){
+				count++;
+			}
+		}
+	}
+
+	\
+
+	private boolean isVowel(char c){
+		char[] vowels = {'A', 'E', 'I', 'O', 'U', 'Y'};
+		for (char vowel : vowels) {
+			if (c == vowel) return true;
+		}
+		return false;
 	}
 }
