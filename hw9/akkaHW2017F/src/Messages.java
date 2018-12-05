@@ -14,7 +14,7 @@ import java.util.List;
  *
  */
 public final class Messages {
-    private static List<String> fileContent;
+    private static StringBuffer fileContent;
     private List<String> firstHalves;
     private List<String> secondHalves;
     private String filePath;
@@ -24,11 +24,11 @@ public final class Messages {
 
     private static Messages instance = null;
 
-    public static List<String> getFileContent() {
+    public static StringBuffer getFileContent() {
         return fileContent;
     }
 
-    public static void setFileContent(List<String> fileContent) {
+    public static void setFileContent(StringBuffer fileContent) {
         Messages.fileContent = fileContent;
     }
 
@@ -77,7 +77,7 @@ public final class Messages {
     }
 
     private Messages() {
-        fileContent = new ArrayList<>();
+        fileContent = new StringBuffer();
         firstHalves = new ArrayList<>();
         secondHalves = new ArrayList<>();
         filePath = "data/Akka10.txt";

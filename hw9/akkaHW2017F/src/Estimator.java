@@ -1,6 +1,7 @@
 import java.io.File;
 
 import akka.actor.AbstractActor;
+import akka.actor.UntypedAbstractActor;
 
 /**
  * This is the main actor and the only actor that is created directly under the
@@ -12,14 +13,24 @@ import akka.actor.AbstractActor;
  *
  */
 // word counter class
-public class Estimator extends AbstractActor {
+public class Estimator extends UntypedAbstractActor {
+	private final double initialC = 0.1;
 
 	@Override
-	public Receive createReceive() {
-		return null;
+	public void onReceive(Object message) throws Throwable {
+		if (message instanceof Integer){
+			Messages.getInstance().getCount();//Useless
+
+		}
 	}
 
-	public Estimator() {
+	public Estimator() {}
 
+	private int estimateC(char[] text){
+		int count = 0;
+
+		for (char c : ){
+
+		}
 	}
 }

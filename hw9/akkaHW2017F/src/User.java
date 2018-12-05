@@ -1,25 +1,15 @@
-import akka.actor.AbstractActor;
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
+import akka.actor.*;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Stream;
-
 /**
  * Main class for your estimation actor system.
  *
  * @author akashnagesh
  *
  */
-public class User extends AbstractActor {
+public class User extends UntypedAbstractActor {
 
 	private static volatile ActorRef userActor;
 	private static volatile ActorRef Estimator1;
@@ -53,15 +43,13 @@ public class User extends AbstractActor {
 	}
 
 	@Override
-	public Receive createReceive() {
-		// read file content
+	public void onReceive(Object message) throws Throwable {
 		File folder = new File("../data");
 		for (File f : folder.listFiles()){
-		 	StringBuffer sb = readFiles(f);
-		 	//TODO: Send sb to estimators and counter.
+			StringBuffer sb = readFiles(f);
+			//TODO: Send sb to estimators and counter.
+			
 		}
-
-		return null;
 	}
 
 	private static StringBuffer readFiles(File file){
