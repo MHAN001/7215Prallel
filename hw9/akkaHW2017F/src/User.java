@@ -58,6 +58,7 @@ public class User extends UntypedAbstractActor {
 //				Estimator1.tell(sb, getSelf());
 //				Estimator2.tell(sb, getSender());
 //				Counter.tell(sb, getSelf());
+
 				Messages m = new Messages(sb, allFiles.length, f.getName());
 				context().system().eventStream().publish(m);
 			}
@@ -74,6 +75,7 @@ public class User extends UntypedAbstractActor {
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			String currentLine = br.readLine();
+			currentLine = currentLine.replaceAll("\\W","");
 			while (currentLine != null){
 				text.append(currentLine);
 				currentLine = br.readLine();

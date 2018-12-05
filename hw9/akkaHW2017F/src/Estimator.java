@@ -18,39 +18,28 @@ public class Estimator extends UntypedAbstractActor {
 	private int C;
 	private final double g = 0.5;
 	private int txtId = 0;
+	private boolean flag = false;
 
 	@Override
 	public void onReceive(Object message) throws Throwable {
 		if (message instanceof Messages){
 			//when receive text from user
-
+			flag =true;
 		}else if (message instanceof Messages.CounterRes){
 			//when receive U(t) from Counter
-			double C1 = getEstimateC()
+			double C1 = getEstimateC();
+
 		}
 	}
 
 	public Estimator() {}
 
-	private double getEstimateC(char[] text){
-		if (txtId == 0){
+	private double getEstimateC(){
+		if (!flag){
 			return initialC;
 		}
-		int count = 0;
-		for (char c : text){
-			if (isVowel(c)){
-				count++;
-			}
-		}
+
 	}
 
-	\
 
-	private boolean isVowel(char c){
-		char[] vowels = {'A', 'E', 'I', 'O', 'U', 'Y'};
-		for (char vowel : vowels) {
-			if (c == vowel) return true;
-		}
-		return false;
-	}
 }

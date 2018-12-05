@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c77770-f35a-4eed-97e8-fa6689ed8655" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../VowelPredictor_Akka-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VowelPredictor_Akka-master/src/chandrikabolla/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/src/chandrikabolla/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VowelPredictor_Akka-master/src/chandrikabolla/WordCountActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/src/chandrikabolla/WordCountActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VowelPredictor_Akka-master/target/classes/chandrikabolla/WordCountActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/target/classes/chandrikabolla/WordCountActor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/FirstCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/FirstCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -271,7 +268,7 @@
       <workItem from="1543941785512" duration="5037000" />
       <workItem from="1543967594211" duration="9696000" />
       <workItem from="1544025943192" duration="4161000" />
-      <workItem from="1544040472091" duration="2876000" />
+      <workItem from="1544040472091" duration="3637000" />
     </task>
     <task id="LOCAL-00001" summary="import akka reference">
       <created>1543892136699</created>
@@ -284,7 +281,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22673000" />
+    <option name="totallyTimeSpent" value="23434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

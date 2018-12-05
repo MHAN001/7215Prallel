@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64af9e3f-b90c-44f5-9b1f-70ab58ca238d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/src/chandrikabolla/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/src/chandrikabolla/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/src/chandrikabolla/WordCountActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/src/chandrikabolla/WordCountActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/target/classes/chandrikabolla/WordCountActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../VowelPredictor_Akka-master/target/classes/chandrikabolla/WordCountActor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../akka_ref/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../akka_ref/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Estimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Estimator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estimator2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,12 +27,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1705" />
+          <entry key="java" value="2410" />
+          <entry key="txt" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1705" />
+          <entry key="JAVA" value="2410" />
+          <entry key="PLAIN_TEXT" value="120" />
         </counts>
       </usages-collector>
     </session>
@@ -49,17 +47,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Estimator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+            <state relative-caret-position="759">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="235">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,17 +68,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Messages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="124">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#EstimatorRes#0;class#Messages#0" />
                 <element signature="e#1106#1107#0" expanded="true" />
                 <element signature="e#1139#1140#0" expanded="true" />
                 <element signature="e#1173#1174#0" expanded="true" />
                 <element signature="e#1207#1208#0" expanded="true" />
                 <element signature="e#1141#1142#0" expanded="true" />
                 <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
                 <element signature="e#1238#1239#0" expanded="true" />
                 <element signature="e#1153#1154#0" expanded="true" />
                 <element signature="e#1187#1188#0" expanded="true" />
@@ -98,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+            <state relative-caret-position="833">
+              <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -193,11 +194,11 @@
         <option value="$PROJECT_DIR$/Messages.java" />
         <option value="$PROJECT_DIR$/Estimator.java" />
         <option value="$PROJECT_DIR$/FirstCounter.java" />
-        <option value="$PROJECT_DIR$/src/FirstCounter.java" />
         <option value="$PROJECT_DIR$/src/Estimator2.java" />
-        <option value="$PROJECT_DIR$/src/Estimator.java" />
-        <option value="$PROJECT_DIR$/src/Messages.java" />
         <option value="$PROJECT_DIR$/src/User.java" />
+        <option value="$PROJECT_DIR$/src/Messages.java" />
+        <option value="$PROJECT_DIR$/src/Estimator.java" />
+        <option value="$PROJECT_DIR$/src/FirstCounter.java" />
       </list>
     </option>
   </component>
@@ -262,7 +263,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544044981945" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544049335499" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../VowelPredictor_Akka-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -322,7 +323,7 @@
       <workItem from="1543967711874" duration="8973000" />
       <workItem from="1543989216818" duration="878000" />
       <workItem from="1544025942581" duration="4932000" />
-      <workItem from="1544039559491" duration="5415000" />
+      <workItem from="1544039559491" duration="8079000" />
     </task>
     <task id="LOCAL-00001" summary="start akka project today!">
       <created>1543891003829</created>
@@ -338,11 +339,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543891021159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change msg structure&#10;Using publish function to tell all actors rather than do it 3 times">
+      <created>1544045037955</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544045037955</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28415000" />
+    <option name="totallyTimeSpent" value="31079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,7 +382,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294539" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3294539" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290469" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -397,7 +405,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start akka project today!" />
-    <option name="LAST_COMMIT_MESSAGE" value="start akka project today!" />
+    <MESSAGE value="Change msg structure&#10;Using publish function to tell all actors rather than do it 3 times" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change msg structure&#10;Using publish function to tell all actors rather than do it 3 times" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -432,30 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FirstCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Estimator2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Estimator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.12/2.5.18/akka-actor_2.12-2.5.18.jar!/akka/actor/AbstractActor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1480">
@@ -469,17 +454,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        <state relative-caret-position="124">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#EstimatorRes#0;class#Messages#0" />
             <element signature="e#1106#1107#0" expanded="true" />
             <element signature="e#1139#1140#0" expanded="true" />
             <element signature="e#1173#1174#0" expanded="true" />
             <element signature="e#1207#1208#0" expanded="true" />
             <element signature="e#1141#1142#0" expanded="true" />
             <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
             <element signature="e#1238#1239#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="e#1187#1188#0" expanded="true" />
@@ -501,8 +486,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        <state relative-caret-position="833">
+          <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Estimator2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Estimator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FirstCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
