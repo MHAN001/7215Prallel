@@ -21,12 +21,12 @@ public final class Messages {
 //    private HashMap<Integer, StringBuffer> textList;
     private int fileAmount;
     private String fileName;
-
+    public static int textId;
 
     public static class EstimatorRes{
         private double Ct;
         private double Avg;
-
+        public int id = textId;
         public EstimatorRes(double ct, double avg) {
             Ct = ct;
             Avg = avg;
@@ -43,9 +43,28 @@ public final class Messages {
 
     public static class CounterRes{
         private double Ut;
+        private double C;
+        private double Sum;
+        public int id = textId;
 
         public CounterRes(double ut) {
             Ut = ut;
+        }
+
+        public double getC() {
+            return C;
+        }
+
+        public void setC(double c) {
+            C = c;
+        }
+
+        public double getSum() {
+            return Sum;
+        }
+
+        public void setSum(double sum) {
+            Sum = sum;
         }
 
         public double getUt() {
@@ -87,9 +106,10 @@ public final class Messages {
         Messages.instance = instance;
     }
 
-    public Messages(StringBuffer fileContent, int fileAmount, String fileName) {
+    public Messages(StringBuffer fileContent, int fileAmount, String fileName, int textId) {
         this.fileContent = fileContent;
         this.fileAmount = fileAmount;
         this.fileName = fileName;
+        this.textId = textId;
     }
 }

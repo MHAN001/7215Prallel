@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c77770-f35a-4eed-97e8-fa6689ed8655" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../VowelPredictor_Akka-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VowelPredictor_Akka-master/target/classes/chandrikabolla/WordCountActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VowelPredictor_Akka-master/target/classes/chandrikabolla/WordCountActor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/Akka_Text/Akka9.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/FirstCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/FirstCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -17,16 +26,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="562272361">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/Estimator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="38" column="25" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
+            <state relative-caret-position="345">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -48,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/FirstCounter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="713">
-              <caret line="33" column="69" lean-forward="true" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
+              <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -66,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/SecondCounter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
-              <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+              <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -83,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="54" column="67" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="67" />
+            <state relative-caret-position="437">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,10 +132,10 @@
       <find>buffer</find>
       <find>filecontent</find>
       <find>getSelf</find>
-      <find>tell</find>
       <find>is</find>
       <find>getse</find>
       <find>getsender</find>
+      <find>tell</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,66 +148,29 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1115" />
-    <option name="y" value="-2171" />
-    <option name="width" value="3863" />
-    <option name="height" value="2183" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1909" />
+    <option name="width" value="1943" />
+    <option name="height" value="2172" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CSYE7215HW9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka_ref" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSYE7215HW9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka_ref" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSYE7215HW9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka_ref" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSYE7215HW9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka_ref" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akkaHW2017F" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543990094794" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hw9/akkaHW2017F" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -269,6 +231,8 @@
       <workItem from="1543967594211" duration="9696000" />
       <workItem from="1544025943192" duration="4161000" />
       <workItem from="1544040472091" duration="3637000" />
+      <workItem from="1544065682372" duration="717000" />
+      <workItem from="1544124373756" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="import akka reference">
       <created>1543892136699</created>
@@ -281,7 +245,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23434000" />
+    <option name="totallyTimeSpent" value="26255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,7 +257,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1111" y="-2167" width="2575" height="1455" extended-state="6" />
+    <frame x="1091" y="0" width="1110" height="1241" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.30365512" />
@@ -331,9 +295,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="import akka reference" />
     <option name="LAST_COMMIT_MESSAGE" value="import akka reference" />
@@ -345,10 +306,24 @@
     <entry file="file://$PROJECT_DIR$/sequence diagram.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/FirstCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="33" column="27" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/SecondCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -373,24 +348,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/FirstCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="33" column="69" lean-forward="true" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/SecondCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="54" column="67" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="67" />
+        <state relative-caret-position="437">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -399,8 +360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akkaHW2017F/Estimator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>

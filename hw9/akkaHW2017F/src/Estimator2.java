@@ -25,6 +25,7 @@ public class Estimator2 extends UntypedAbstractActor {
 
         }else if (message instanceof Double){
             //when receive U(t) from Counter
+
         }
     }
 

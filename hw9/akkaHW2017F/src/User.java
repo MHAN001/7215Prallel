@@ -16,10 +16,10 @@ import java.util.concurrent.TimeUnit;
  */
 public class User extends UntypedAbstractActor {
 
-	private static volatile ActorRef userActor;
-	private static volatile ActorRef Estimator1;
-	private static volatile ActorRef Estimator2;
-	private static volatile ActorRef Counter;
+	static volatile ActorRef userActor;
+	static volatile ActorRef Estimator1;
+	static volatile ActorRef Estimator2;
+	static volatile ActorRef Counter;
 	public static int FileAmount;
 
 	public static void main(String[] args) throws Exception {
@@ -53,13 +53,14 @@ public class User extends UntypedAbstractActor {
 			File folder = new File("../data");
 			File[] allFiles = folder.listFiles();
 			FileAmount = allFiles.length;
+			int textId = 0;
 			for (File f : allFiles){
 				StringBuffer sb = readFiles(f);
 //				Estimator1.tell(sb, getSelf());
 //				Estimator2.tell(sb, getSender());
 //				Counter.tell(sb, getSelf());
 
-				Messages m = new Messages(sb, allFiles.length, f.getName());
+				Messages m = new Messages(sb, allFiles.length, f.getName(), textId++);
 				context().system().eventStream().publish(m);
 			}
 		}else if (message instanceof Messages.EstimatorRes){
