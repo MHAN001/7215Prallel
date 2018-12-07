@@ -1,6 +1,9 @@
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.actor.UntypedAbstractActor;
 
 /**
@@ -13,34 +16,52 @@ import akka.actor.UntypedAbstractActor;
  *
  */
 // word counter class
-public class Estimator2 extends UntypedAbstractActor {
-    private final double initialC = 0.1;
-    private final double g = 0.4;
-    private int txtId = 0;
+public class Estimator2 extends Estimator {
+    private double g = 0.4;
+    private List<Double> Utlist = new ArrayList<>();
+    private double Ut;
+    private double Ct;
+    private double CNext;
 
+    @SuppressWarnings("Duplicates")
     @Override
     public void onReceive(Object message) throws Throwable {
-        if (message instanceof StringBuffer){
+        ActorRef user = User.userActor, counter = User.Counter;
+        Messages.EstimatorRes response;
+        if (message instanceof Messages){
+            double avg = calculateS(((Messages) message).textId);
             //when receive text from user
-
-        }else if (message instanceof Double){
+            if (((Messages) message).textId == 0){
+                response = new Messages.EstimatorRes(initialC,avg);
+                user.tell(response, getSelf());
+                counter.tell(Ct, getSelf());
+            }else {
+                response = new Messages.EstimatorRes(Ct, avg);
+                counter.tell(Ct, getSelf());
+                user.tell(response, getSelf());
+            }
+        }else if (message instanceof Messages.CounterRes){
             //when receive U(t) from Counter
-
+            Messages.CounterRes msg = (Messages.CounterRes) message;
+            Ut = (msg.getUt());
+            Ct = getActualC(((Messages.CounterRes)message).id, Ut);
+            CNext = getNextC(msg, g);
+            Utlist.add(Ut);
+            double avg = calculateS(((Messages.CounterRes) message).id);
+            response = new Messages.EstimatorRes(Ct, avg);
+            user.tell(response, getSelf());
+            counter.tell(Ct, getSelf());
         }
     }
 
-    public Estimator2() {}
-
-    private double getEstimatorPercent(){
-
+    private double calculateS(int id){
+        if (id == 0){
+            return Utlist.isEmpty()? 0 : Utlist.get(0);
+        }
+        int sum = 0;
+        for (int i = 0 ; i <= id && i < Utlist.size(); i++){
+            sum += Utlist.get(i);
+        }
+        return sum/id;
     }
-
-    private double getActualPercent(){
-
-    }
-
-    private double getAverage(){
-
-    }
-
 }

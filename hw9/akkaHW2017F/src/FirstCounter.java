@@ -19,8 +19,9 @@ public class FirstCounter extends UntypedAbstractActor {
 		if (message instanceof Messages){
 			vNum = countVowels(((Messages) message).getFileContent());
 			lt = ((Messages) message).getFileContent().length();
-		}
-		if (message instanceof Messages.EstimatorRes){
+			res = new Messages.CounterRes(vNum/lt);
+			User.Estimator1.tell(res, getSelf());
+		}else if (message instanceof Messages.EstimatorRes){
 			if (lt == 0){
 				Ut = 0;
 				res = new Messages.CounterRes(Ut);

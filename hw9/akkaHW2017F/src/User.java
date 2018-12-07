@@ -50,21 +50,23 @@ public class User extends UntypedAbstractActor {
 	public void onReceive(Object message) throws Throwable {
 
 		if (message instanceof String){
-			File folder = new File("../data");
+			File folder = new File("C:\\Users\\xu han\\7215\\7215Prallel\\hw9\\akkaHW2017F\\data");
 			File[] allFiles = folder.listFiles();
 			FileAmount = allFiles.length;
 			int textId = 0;
 			for (File f : allFiles){
 				StringBuffer sb = readFiles(f);
-//				Estimator1.tell(sb, getSelf());
-//				Estimator2.tell(sb, getSender());
-//				Counter.tell(sb, getSelf());
-
 				Messages m = new Messages(sb, allFiles.length, f.getName(), textId++);
-				context().system().eventStream().publish(m);
+				Estimator1.tell(m, getSelf());
+				Estimator2.tell(m, getSender());
+				Counter.tell(m, getSelf());
+
+//				context().system().eventStream().publish(m);
+
 			}
 		}else if (message instanceof Messages.EstimatorRes){
-			System.out.println("Estimator: "+ getSender().path().name() +" With C(t): "+((Messages.EstimatorRes) message).getCt() + "Average" + ((Messages.EstimatorRes) message).getAvg());
+			System.out.println("Estimator: "+ getSender().path().name() +" With C("+((Messages.EstimatorRes) message).id+"): "
+					+((Messages.EstimatorRes) message).getCt() + "Average" + ((Messages.EstimatorRes) message).getAvg());
 		}else if (message instanceof Messages.CounterRes){
 			System.out.println("Counter" + getSender().path().name() + "With U(t): " + ((Messages.CounterRes) message).getUt());
 		}
@@ -76,8 +78,8 @@ public class User extends UntypedAbstractActor {
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			String currentLine = br.readLine();
-			currentLine = currentLine.replaceAll("\\W","");
 			while (currentLine != null){
+				currentLine = currentLine.replaceAll("[\\W+_]","");
 				text.append(currentLine);
 				currentLine = br.readLine();
 			}

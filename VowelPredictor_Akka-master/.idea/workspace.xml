@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1022ac48-bb45-4c7b-a140-a910e208c9f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chandrikabolla/WordCountActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chandrikabolla/WordCountActor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../akka_ref/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../akka_ref/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/FirstCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/FirstCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/Estimator2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/Estimator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/Estimator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/Estimator2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/Estimator2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/FirstCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/FirstCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw9/akkaHW2017F/target/classes/User.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,8 +38,10 @@
     <session id="-1431879951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -62,8 +66,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/chandrikabolla/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+                <state relative-caret-position="598">
+                  <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -71,7 +75,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/chandrikabolla/WordCountActor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
+                <state relative-caret-position="713">
                   <caret line="53" column="28" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="28" />
                 </state>
               </provider>
@@ -103,8 +107,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/chandrikabolla/FirstCounter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="13" column="7" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="7" />
+                <state relative-caret-position="-230">
+                  <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -126,7 +130,7 @@
             <entry file="file://$PROJECT_DIR$/src/chandrikabolla/Estimator.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="419">
-                  <caret line="107" column="44" lean-forward="true" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
+                  <caret line="107" column="44" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -146,8 +150,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/chandrikabolla/Messages.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="281">
-                  <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+                <state relative-caret-position="920">
+                  <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -194,10 +198,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1115" />
-    <option name="y" value="-2171" />
-    <option name="width" value="3863" />
-    <option name="height" value="2183" />
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="2766" />
+    <option name="height" value="1854" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -297,17 +301,17 @@
       <workItem from="1543982089099" duration="3542000" />
       <workItem from="1544025940343" duration="3152000" />
       <workItem from="1544039578608" duration="5596000" />
+      <workItem from="1544137932733" duration="682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12290000" />
+    <option name="totallyTimeSpent" value="12972000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1111" y="-2167" width="2575" height="1455" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1381" height="925" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986571" visible="true" weight="0.12683897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986571" visible="true" weight="0.12849584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -328,7 +332,6 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290469" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,6 +341,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32976744" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +356,20 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-97" />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chandrikabolla/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chandrikabolla/WordCountActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -379,6 +397,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/chandrikabolla/Estimator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="107" column="44" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chandrikabolla/SecondCounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -386,41 +414,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chandrikabolla/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chandrikabolla/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chandrikabolla/Estimator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="107" column="44" lean-forward="true" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chandrikabolla/WordCountActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="920">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chandrikabolla/FirstCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="-230">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>

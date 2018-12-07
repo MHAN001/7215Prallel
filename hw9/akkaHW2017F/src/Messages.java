@@ -76,16 +76,8 @@ public final class Messages {
         return fileContent;
     }
 
-    public void setFileContent(StringBuffer fileContent) {
-        this.fileContent = fileContent;
-    }
-
     public String getFileName() {
         return fileName;
-    }
-
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
     }
 
     public static Messages getInstance() {
@@ -96,15 +88,7 @@ public final class Messages {
         return fileAmount;
     }
 
-    public void setFileAmount(int fileAmount) {
-        this.fileAmount = fileAmount;
-    }
-
     private static Messages instance = null;
-
-    public static void setInstance(Messages instance) {
-        Messages.instance = instance;
-    }
 
     public Messages(StringBuffer fileContent, int fileAmount, String fileName, int textId) {
         this.fileContent = fileContent;

@@ -50,7 +50,7 @@ public class Estimator extends UntypedActor {
 	}
 	
 	private String[] getFiles() throws FileNotFoundException{
-		File folder = new File("src/AkkaText");
+		File folder = new File("C:\\Users\\xu han\\7215\\7215Prallel\\Counting-Vowels-Using-Akka\\AkkaText");
 		String[] files = new String[10];
 		int index = 0;
 		for(File file : folder.listFiles()){
